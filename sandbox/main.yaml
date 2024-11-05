@@ -1,0 +1,34 @@
+config:
+  theme: "darkly"             # ttkbootstrapテーマ名
+  font_family: "Arial"         # デフォルトのフォントファミリー
+  font_size: 12                # デフォルトのフォントサイズ
+  color_palette: "universal"   # 使用するカラーパレット名
+  language: "en"               # 言語設定（多言語対応）
+  refresh_interval: 200        # ミリ秒単位でのリフレッシュ間隔（動的更新用）
+
+window:
+  title: "Sample Application"  # ウィンドウのタイトル
+  width: 800                   # ウィンドウの幅
+  height: 600                  # ウィンドウの高さ
+  resizable: true              # ウィンドウのリサイズを許可
+  position:                    # ウィンドウの初期表示位置
+    x: 100
+    y: 100
+  icon: "app_icon.ico"         # ウィンドウアイコン（オプション）
+  background_color: "background" # 背景色（カラーパレット名を指定）
+
+display_controls:
+  animation: true              # 表示アニメーションの有無
+  animation_speed: "normal"    # アニメーション速度（slow, normal, fast）
+  initial_visibility: true     # 起動時のウィンドウの表示状態
+  fade_in: false               # 起動時のフェードイン効果
+  opacity: 1.0                 # ウィンドウの透明度（0.0〜1.0）
+
+flexible:
+  window_scaling: true         # ウィンドウ全体のスケーリングを許可
+  maintain_aspect_ratio: true  # アスペクト比を維持
+  min_width: 600               # 最小幅
+  min_height: 400              # 最小高さ
+  max_width: 1200              # 最大幅
+  max_height: 800              # 最大高さ
+  content_scaling: true        # ウィンドウ内容のスケーリングを許可
