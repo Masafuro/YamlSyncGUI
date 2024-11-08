@@ -1,0 +1,11 @@
+# dynamic_config.yaml
+refresh_interval: 200
+
+flexible:
+  window_scaling: true
+  maintain_aspect_ratio: true
+  min_width: 600
+  min_height: 400
+  max_width: 1200
+  max_height: 800
+  content_scaling: true

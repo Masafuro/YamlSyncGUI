@@ -1,0 +1,6 @@
+# invalid_color_code_invalid_character.yaml
+# カラーコードに無効な文字が含まれているため、エラーを引き起こします
+
+colors:
+  GREEN: "#03AF7AX"    # 無効な文字 'X' が含まれている
+  BLUE: "#005AFF"      # 有効なカラーコード

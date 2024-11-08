@@ -1,0 +1,23 @@
+test_date: "2023-11-06"
+tester: "developer_name"
+
+gui_element_tests:
+  - element: "Submit Button"
+    test_cases:
+      - description: "Button is visible on load"
+        result: ""         # 手動で入力
+        notes: ""
+
+      - description: "Button color changes to blue on hover"
+        result: ""
+        notes: ""
+
+  - element: "Username Input Field"
+    test_cases:
+      - description: "Input field is visible on load"
+        result: ""
+        notes: ""
+
+      - description: "Input accepts maximum of 20 characters"
+        result: ""
+        notes: ""

@@ -1,0 +1,11 @@
+# unsupported_top_level_key.yaml
+# サポートされていないトップレベルキー 'extra' が含まれているため、エラーを引き起こします
+
+colors:
+  RED: "#FF4B00"
+  YELLOW: "#FFF100"
+  GREEN: "#03AF7A"
+  BLUE: "#005AFF"
+
+extra:
+  description: "Extra unsupported key"

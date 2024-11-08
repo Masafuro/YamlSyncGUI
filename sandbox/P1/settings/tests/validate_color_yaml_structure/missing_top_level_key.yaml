@@ -1,0 +1,7 @@
+# missing_top_level_key.yaml
+# colorsキーが欠落しているため、エラーを引き起こします
+
+RED: "#FF4B00"
+YELLOW: "#FFF100"
+GREEN: "#03AF7A"
+BLUE: "#005AFF"

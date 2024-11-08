@@ -1,0 +1,47 @@
+function_name: load_yaml
+test_datetime: '2024-11-06T09:12:11'
+tester: Masahiro Furukawa
+
+
+test_overview:
+- '正常なパラメータの読み込み: dynamic_settings.yaml'
+- '正常なパラメータの読み込み: static_settings.yaml'
+- 無効なパラメータのエラーハンドリング（存在しないファイル）
+- 無効なパラメータのエラーハンドリング（不正な構文）
+- 無効なパラメータのエラーハンドリング（空のファイル）
+
+test_parameters:
+  invalid_parameters:
+  - nonexistent.yaml
+  - invalid_syntax.yaml
+  - empty.yaml
+  valid_parameters:
+  - dynamic_settings.yaml
+  - static_settings.yaml
+  - universal_colors.yaml
+
+tests:
+- description: '正常なパラメータの読み込み: dynamic_settings.yaml'
+  input: "../../settings/dynamic_settings.yaml"
+  notes: 'passed'
+  result: ''
+- description: '正常なパラメータの読み込み: static_settings.yaml'
+  input: "../../settings/static_settings.yaml"
+  notes: 'passed'
+  result: ''
+- description: '正常なパラメータの読み込み: universal_colors.yaml'
+  input: "../../settings/universal_colors.yaml"
+  notes: 'passed'
+  result: ''
+- description: 無効なパラメータのエラーハンドリング（存在しないファイル）
+  input: "../../settings/tests/nonexists.yaml"
+  notes: 'passed'
+  result: ''
+- description: 無効なパラメータのエラーハンドリング（不正な構文）
+  input: "../../settings/tests/invalid_syntax.yaml"
+  notes: 'passed'
+  result: ''
+- description: 無効なパラメータのエラーハンドリング（空のファイル）
+  input: "../../settings/tests/empty.yaml"
+  notes: 'passed'
+  result: ''

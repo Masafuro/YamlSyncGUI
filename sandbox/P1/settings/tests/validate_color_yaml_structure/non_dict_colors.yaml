@@ -1,0 +1,8 @@
+# non_dict_colors.yaml
+# colorsキーが辞書ではなくリストとして定義されているため、エラーを引き起こします
+
+colors:
+  - RED: "#FF4B00"
+  - YELLOW: "#FFF100"
+  - GREEN: "#03AF7A"
+  - BLUE: "#005AFF"

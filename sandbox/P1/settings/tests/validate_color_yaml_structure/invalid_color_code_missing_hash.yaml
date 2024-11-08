@@ -1,0 +1,6 @@
+# invalid_color_code_missing_hash.yaml
+# カラーコードが '#'で始まらないため、エラーを引き起こします
+
+colors:
+  RED: "FF4B00"        # '#'が欠落
+  YELLOW: "#FFF100"    # 有効なカラーコード

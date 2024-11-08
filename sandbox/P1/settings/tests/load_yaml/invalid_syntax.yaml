@@ -1,0 +1,3 @@
+key1 "missing_colon_here"
+key2: "This line is correct"
+key3 "another_missing_colon"

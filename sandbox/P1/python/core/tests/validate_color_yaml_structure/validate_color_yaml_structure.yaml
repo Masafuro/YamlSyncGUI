@@ -1,0 +1,59 @@
+function_name: validate_color_yaml_structure
+test_datetime: '2024-11-06T10:20:07'
+tester: Masahiro Furukawa
+
+test_overview:
+- '正常なデータ構造: universal_colors.yaml'
+- 'エラーハンドリング: トップレベルキーがない'
+- 'エラーハンドリング: colorsキーが辞書形式でない'
+- 'エラーハンドリング: カラーコードが "#" で始まらない'
+- 'エラーハンドリング: カラーコードの文字数が6桁に満たない'
+- 'エラーハンドリング: カラーコードに無効な文字が含まれている'
+- 'エラーハンドリング: 色名が重複している'
+- 'エラーハンドリング: サポート外のキーが存在する'
+
+test_parameters:
+  invalid_parameters:
+  - missing_top_level_key.yaml
+  - non_dict_colors.yaml
+  - invalid_color_code_missing_hash.yaml
+  - invalid_color_code_insufficient_length.yaml
+  - invalid_color_code_invalid_character.yaml
+  - duplicate_color_name.yaml
+  - unsupported_top_level_key.yaml
+  valid_parameters:
+  - universal_colors.yaml
+
+tests:
+- description: '正常なデータ構造: universal_colors.yaml'
+  input: universal_colors.yaml
+  notes: 'pass'
+  result: ''
+- description: 'エラーハンドリング: トップレベルキーがない'
+  input: missing_top_level_key.yaml
+  notes: 'pass'
+  result: ''
+- description: 'エラーハンドリング: colorsキーが辞書形式でない'
+  input: non_dict_colors.yaml
+  notes: 'pass'
+  result: ''
+- description: 'エラーハンドリング: カラーコードが ''#'' で始まらない'
+  input: invalid_color_code_missing_hash.yaml
+  notes: 'pass'
+  result: ''
+- description: 'エラーハンドリング: カラーコードの文字数が6桁に満たない'
+  input: invalid_color_code_insufficient_length.yaml
+  notes: 'pass'
+  result: ''
+- description: 'エラーハンドリング: カラーコードに無効な文字が含まれている'
+  input: invalid_color_code_invalid_character.yaml
+  notes: ''
+  result: ''
+- description: 'エラーハンドリング: 色名が重複している'
+  input: duplicate_color_name.yaml
+  notes: ''
+  result: ''
+- description: 'エラーハンドリング: サポート外のキーが存在する'
+  input: unsupported_top_level_key.yaml
+  notes: ''
+  result: ''

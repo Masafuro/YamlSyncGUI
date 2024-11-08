@@ -1,0 +1,6 @@
+# invalid_color_code_insufficient_length.yaml
+# カラーコードの文字数が6桁に満たないため、エラーを引き起こします
+
+colors:
+  YELLOW: "#FFF1"      # 文字数が不足
+  GREEN: "#03AF7A"     # 有効なカラーコード

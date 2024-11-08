@@ -1,0 +1,24 @@
+# static_config.yaml
+config:
+  theme: "darkly"
+  font_family: "Arial"
+  font_size: 12
+  color_palette: "universal"
+  language: "en"
+
+window:
+  title: "Sample Application"
+  width: 800
+  height: 600
+  position:
+    x: 100
+    y: 100
+  icon: "app_icon.ico"
+  background_color: "background"
+
+display_controls:
+  animation: true
+  animation_speed: "normal"
+  fade_in: false
+  initial_visibility: true
+  opacity: 1.0

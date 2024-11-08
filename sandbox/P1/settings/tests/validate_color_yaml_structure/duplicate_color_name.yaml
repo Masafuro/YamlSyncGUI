@@ -1,0 +1,9 @@
+# duplicate_color_name.yaml
+# 色名が重複しているため、エラーを引き起こします
+
+colors:
+  RED: "#FF4B00"
+  YELLOW: "#FFF100"
+  GREEN: "#03AF7A"
+  BLUE: "#005AFF"
+  RED: "#FF4B00"  # REDの重複
